@@ -1,3 +1,4 @@
 module.exports={
-    mongoURI:"mongodb+srv://admin:4a9nqnZjQL0pEGuI@cluster0-aituf.azure.mongodb.net/othernode?retryWrites=true"
+    mongoURI:"mongodb+srv://lideshou:123456...@root-qjuge.mongodb.net/test?retryWrites=true&w=majority",
+    srcretOrKey:"secret"
 }
