@@ -70,12 +70,23 @@
                                 localStorage.setItem("liToken",token);
                                 //解析token
                                 const decode=jwtDecode(token);
-                                console.log(decode);
+                                //console.log(decode);
+                                //token存储到vuex中
+                                this.$store.dispatch("setAuthenticated",!this.isEmpty(decode));
+                                this.$store.dispatch("setUser",decode);
                                 //请求存储成功以后跳转到页面
                                 this.$router.push("/index");
                             });
                     }
                 });
+            },
+            //判断解析后的token是否为空
+            isEmpty(value){
+                return (
+                    value===undefined||value===null
+                    ||(typeof value==="object"&&Object.keys(value).length===0)||
+                    (typeof value==="string"&&value.trim().length===0)
+                );
             }
         }
     };
