@@ -7,7 +7,7 @@ function startLoading() {
     loading=Loading.service({
         lock:true,
         text:"拼命加载ing...",
-        background:"rgba(0,0,0,.7)"
+        background:"rgba(0,0,0,0,7)"
     });
 }
 
@@ -36,7 +36,6 @@ axios.interceptors.response.use(response=>{
     //错误提醒
     endLoading();
     Message.error(error.response.data);
-    return Promise.reject(error);
 
     //获取错误状态码
     const {status}=error.response;
