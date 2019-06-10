@@ -7,13 +7,12 @@
             </el-col>
             <el-col :span="6" class="user">
                 <div class="userinfo">
-                    <img src="http://www.gravatar.com/avatar/f915983474a720ac00e47d08ce1fe065?s=200&r=pg&d=mm" class="avatar" alt="">
+                    <img :src="user.avatar" class="avatar" alt="">
                     <div class="welcome">
                         <p class="name comename">欢迎</p>
-                        <p class="name avatarname">Lideshou</p>
+                        <p class="name avatarname">{{user.name}}</p>
                     </div>
-                </div>
-                <span class="username">
+                    <span class="username">
                     <!--下拉箭头-->
                     <el-dropdown trigger="click" @command="setDialogInfo">
                         <span class="el-dropdown-link">
@@ -25,6 +24,7 @@
                         </el-dropdown-menu>
                     </el-dropdown>
                 </span>
+                </div>
             </el-col>
         </el-row>
     </header>
@@ -32,7 +32,36 @@
 
 <script>
     export default {
-        name:"head-nav"
+        name:"head-nav",
+        computed:{
+            user(){
+                return this.$store.getters.user;
+            }
+        },
+        methods:{
+            setDialogInfo(cmdItem){
+                //console.log(cmdItem);
+                switch(cmdItem){
+                    case "info":
+                    this.showInfoList();
+                    break;
+                    case "logout":
+                    this.logOut();
+                    break;
+                }
+            },
+            showInfoList(){
+                this.$router.push("/infoshow");
+            },
+            logOut(){
+                //清除token
+                localStorage.removeItem("liToken");
+                //设置vuex store
+                this.$store.dispatch("clearCurrentState");
+                //跳转到登录页面
+                this.$router.push("/login");
+            }
+        }
     }
 </script>
 
