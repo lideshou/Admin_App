@@ -78,7 +78,7 @@
             onSubmit(form) {
                 this.$refs[form].validate(vaild => {
                     if(vaild) {
-                        const url = this.dialog.option == "add" ? "add" : `edit/${this.formData.id}`
+                        const url = this.dialog.option == "add" ? "add" : `edit/${this.formData.id}`;
                         this.$axios.post(`api/profiles/${url}`, this.formData)
                             .then(res => {
                                 //添加成功
@@ -89,7 +89,7 @@
                                 //隐藏对话框
 
                                 this.dialog.show = false
-                                this.$emit('update')
+                                this.$emit('updata');
                                 //  let that = this
                                 //  setTimeout(()=>{
                                 //    that.$emit('update')

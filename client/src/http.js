@@ -7,7 +7,7 @@ function startLoading() {
     loading=Loading.service({
         lock:true,
         text:"拼命加载ing...",
-        background:"rgba(0,0,0,0,7)"
+        background:"rgba(0,0,0,0.7)"
     });
 }
 
@@ -24,15 +24,15 @@ axios.interceptors.request.use(config=>{
         config.headers.Authorization=localStorage.liToken;
     }
     return config;
-}),error=>{
+},error=>{
     return Promise.reject(error);
-};
+})
 
 //响应拦截
 axios.interceptors.response.use(response=>{
     endLoading();
     return response;
-}),error=>{
+},error=>{
     //错误提醒
     endLoading();
     Message.error(error.response.data);
@@ -46,6 +46,6 @@ axios.interceptors.response.use(response=>{
         //跳转到登录页面
         router.push("/login");
     }
-}
+})
 
 export default axios;
