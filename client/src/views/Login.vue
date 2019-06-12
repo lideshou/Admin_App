@@ -28,7 +28,6 @@
     export default {
         name:"login",
         components:{
-
         },
         data(){
             return{
@@ -61,7 +60,7 @@
             submitForm(formName){
                 this.$refs[formName].validate((valid) => {
                     if (valid) {
-                        this.$axios.post("/api/users/login",this.loginUser)
+                        this.$axios.get("/api/users/login",this.loginUser)
                             .then(res=>{
                                 //console.log(res);
                                 //token

@@ -50,9 +50,11 @@ router.post("/register",(req,res)=>{
 //$router POST api/users/login
 //@desc 返回token jwt passport
 //access public
-router.post("/login",(req,res)=>{
+router.get("/login",(req,res)=>{
     const email=req.body.email;
     const password=req.body.password;
+    console.log(req.body);
+    console.log("LDS");
     //查询数据库
     User.findOne({email})
         .then(user=>{
