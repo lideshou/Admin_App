@@ -53,6 +53,8 @@ router.post("/register",(req,res)=>{
 router.post("/login",(req,res)=>{
     const email=req.body.email;
     const password=req.body.password;
+    console.log(req.body);
+    console.log("LDS");
     //查询数据库
     User.findOne({email})
         .then(user=>{
