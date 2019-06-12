@@ -35,7 +35,7 @@ axios.interceptors.response.use(response=>{
 },error=>{
     //错误提醒
     endLoading();
-    Message.error("后台请求的接口地址不对");
+    Message.error(error.response.data);
 
     //获取错误状态码
     const {status}=error.response;
