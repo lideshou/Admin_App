@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b37c4bfc-a0c9-4922-b04c-fb31639a75bd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/client/dist/assets/js/app.05262ad9.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/dist/assets/js/app.05262ad9.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/Fundlist.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Fundlist.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/dist/assets/js/app.c9bcc8a5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/dist/assets/js/app.c9bcc8a5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/assets/css/app.61a8a971.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/dist/assets/css/app.61a8a971.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/assets/css/app.a0972af8.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/dist/assets/css/app.a0972af8.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/assets/js/app.6d34e1d2.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/client/dist/assets/js/app.6d34e1d2.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routers/api/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routers/api/users.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,7 +26,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/components/Dialog.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1191">
+            <state relative-caret-position="2525">
               <caret line="101" column="10" selection-start-line="101" selection-start-column="10" selection-end-line="101" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#el-form#0;n#div#0;n#el-dialog#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -31,8 +38,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/src/views/Login.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="275">
+              <caret line="62" column="40" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routers/api/users.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -40,7 +56,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/vue.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
+            <state relative-caret-position="1525">
               <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
             </state>
           </provider>
@@ -49,7 +65,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/views/Fundlist.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
+            <state relative-caret-position="925">
               <caret line="37" column="82" selection-start-line="37" selection-start-column="82" selection-end-line="37" selection-end-column="82" />
               <folding>
                 <element signature="n#style#0;n#el-table#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -105,9 +121,9 @@
         <option value="$PROJECT_DIR$/client/package-lock.json" />
         <option value="$PROJECT_DIR$/client/vue.config.js" />
         <option value="$PROJECT_DIR$/client/src/http.js" />
-        <option value="$PROJECT_DIR$/routers/api/users.js" />
         <option value="$PROJECT_DIR$/client/src/components/Dialog.vue" />
         <option value="$PROJECT_DIR$/client/src/views/Fundlist.vue" />
+        <option value="$PROJECT_DIR$/routers/api/users.js" />
         <option value="$PROJECT_DIR$/client/src/views/Login.vue" />
       </list>
     </option>
@@ -126,17 +142,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="node-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="node-app" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -152,19 +157,6 @@
             <path>
               <item name="node-app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="E:\Vue\node-app" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="client" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="node-app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\Vue\node-app" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="client" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="assets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="node-app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="E:\Vue\node-app" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="config" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -175,7 +167,24 @@
             <path>
               <item name="node-app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="E:\Vue\node-app" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="node_modules" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="routers" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="node-app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\Vue\node-app" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="routers" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="api" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="node-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="node-app" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -255,17 +264,17 @@
       <workItem from="1560084031036" duration="6777000" />
       <workItem from="1560169839690" duration="7748000" />
       <workItem from="1560250709575" duration="3150000" />
+      <workItem from="1560341854074" duration="889000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87800000" />
+    <option name="totallyTimeSpent" value="88689000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -279,7 +288,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3286334" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3286334" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -514,13 +523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routers/api/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="66" column="66" selection-start-line="66" selection-start-column="66" selection-end-line="66" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/HeadNav.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -531,9 +533,26 @@
     <entry file="file://$PROJECT_DIR$/client/dist/images/Blue_dot.ico">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Dialog.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2525">
+          <caret line="101" column="10" selection-start-line="101" selection-start-column="10" selection-end-line="101" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#el-form#0;n#div#0;n#el-dialog#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/vue.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1525">
+          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/views/Fundlist.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
+        <state relative-caret-position="925">
           <caret line="37" column="82" selection-start-line="37" selection-start-column="82" selection-end-line="37" selection-end-column="82" />
           <folding>
             <element signature="n#style#0;n#el-table#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -545,27 +564,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Dialog.vue">
+    <entry file="file://$PROJECT_DIR$/routers/api/users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1191">
-          <caret line="101" column="10" selection-start-line="101" selection-start-column="10" selection-end-line="101" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#el-form#0;n#div#0;n#el-dialog#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/vue.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+        <state relative-caret-position="116">
+          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/views/Login.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="275">
+          <caret line="62" column="40" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
         </state>
       </provider>
     </entry>
