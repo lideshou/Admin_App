@@ -60,7 +60,7 @@
             submitForm(formName){
                 this.$refs[formName].validate((valid) => {
                     if (valid) {
-                        this.$axios.get("/api/users/login",this.loginUser)
+                        this.$axios.post("/api/users/login",this.loginUser)
                             .then(res=>{
                                 //console.log(res);
                                 //token
