@@ -15,5 +15,5 @@ Vue全栈项目，Vue-cli3.0+Element-ui构建前端页面。Node+express+jwt实�
 ### 个人中心：
 ![image](https://github.com/lideshou/WaterDroplets_App/blob/master/client/src/assets/showinfo.png)
 ## Last
-预览请移步：https://lideshou.github.io/WaterDroplets_App/client/dist/index.html
+预览请移步：https://lideshou.github.io/WaterDroplets_App/client/dist/index.html<br>
 ps:Github目前只支持静态页面部署.
