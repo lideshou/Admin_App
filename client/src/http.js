@@ -26,13 +26,15 @@ axios.interceptors.request.use(config=>{
     return config;
 },error=>{
     return Promise.reject(error);
-})
+});
 
 //响应拦截
 axios.interceptors.response.use(response=>{
+    console.log("响应拦截成功");
     endLoading();
     return response;
 },error=>{
+    console.log("响应拦截失败");
     //错误提醒
     endLoading();
     Message.error(error.response.data);
@@ -46,6 +48,6 @@ axios.interceptors.response.use(response=>{
         //跳转到登录页面
         router.push("/login");
     }
-})
+});
 
 export default axios;

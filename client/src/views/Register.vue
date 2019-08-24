@@ -109,15 +109,19 @@
             submitForm(formName){
                 this.$refs[formName].validate((valid) => {
                     if (valid) {
-                        this.$axios.post("/api/users/register",this.registerUser)
-                            .then(res=>{
-                                //注册成功
-                                this.$message({
-                                    message:"注册成功！",
-                                    type:"success"
-                                });
+                        this.$axios({
+                            method:"post",
+                            url:"/api/users/register",
+                            data:this.registerUser
+                        }).then((res)=>{
+                            if (res.status==400){
+                                return;
+                            }
+                            this.$message({
+                                message:"注册成功！",
+                                type:"success"
                             });
-                        this.$router.push("/login");
+                        });
                     }
                 });
             }

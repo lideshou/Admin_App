@@ -14,8 +14,6 @@ const User=require("../../modules/User");
 //access public
 
 router.post("/register",(req,res)=>{
-    //console.log(req.body);
-
     //查询数据库中是否拥有邮箱
     User.findOne({email:req.body.email})
         .then((user)=>{
@@ -29,8 +27,8 @@ router.post("/register",(req,res)=>{
                     email:req.body.email,
                     password:req.body.password,
                     identity:req.body.identity,
-                    avatar
-                })
+                    avatar:avatar
+                });
 
                 bcryptNodejs.genSalt(10, function(err, salt) {
                     bcryptNodejs.hash(newUser.password, salt,null,(err, hash) =>{
@@ -45,7 +43,7 @@ router.post("/register",(req,res)=>{
                 });
             }
         })
-})
+});
 
 //$router POST api/users/login
 //@desc 返回token jwt passport
@@ -53,7 +51,7 @@ router.post("/register",(req,res)=>{
 router.post("/login",(req,res)=>{
     const email=req.body.email;
     const password=req.body.password;
-    
+
     //查询数据库
     User.findOne({email})
         .then(user=>{

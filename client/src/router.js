@@ -8,10 +8,10 @@ import Home from "./views/Home"
 import InfoShow from "./views/Infoshow"
 import Fundlist from "./views/Fundlist"
 
-Vue.use(Router)
+Vue.use(Router);
 
 const router=new Router({
-  mode: 'hash',
+  mode: 'history',
   base: process.env.BASE_URL,
   routes: [
     {

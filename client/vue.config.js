@@ -1,10 +1,10 @@
 /**
  * Vue cli 3.0 跨域配置文件
- * 
+ *
  */
 
-const path = require('path')
-const debug = process.env.NODE_ENV !== 'production'
+const path = require('path');
+const debug = process.env.NODE_ENV !== 'production';
 
 module.exports = {
     publicPath: './', // 根域上下文目录
@@ -56,7 +56,7 @@ module.exports = {
                     '^/api': ''
                 }
             }
-        }, 
+        },
         before: app => { }
     }
 }
